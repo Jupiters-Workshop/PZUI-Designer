@@ -3,7 +3,7 @@
     "workspace": {
         "library": ["$PZ_UMBRELLA"],
         "workspaceRoots": [
-            "Contents/mods/PZUIDesigner/42/media/lua/"
+            "Contents/mods/**/**/media/lua"
         ]
     },
     "runtime": {
@@ -16,5 +16,8 @@
     },
     "diagnostics": {
         "disable": ["unnecessary-if"]
+    },
+    "completion": {
+        "autoRequireSeparator": "/"
     }
 }
