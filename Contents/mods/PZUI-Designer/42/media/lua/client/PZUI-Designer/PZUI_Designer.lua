@@ -21,12 +21,14 @@ Events.OnKeyPressed.Add(function(key)
 
     -- if the UI exists, we close it
     if Designer then
+        UIManager.getSpeedControls():SetCurrentGameSpeed(1)
         Designer:setVisible(false)
         Designer:removeFromUIManager()
         Designer = nil
-
+        
     -- else we create a new instance of that UI
     else
+        UIManager.getSpeedControls():SetCurrentGameSpeed(0)
         Designer = PZUI:new(0, 0, getCore():getScreenWidth(), getCore():getScreenHeight())
         Designer:initialise()
         Designer:addToUIManager()
