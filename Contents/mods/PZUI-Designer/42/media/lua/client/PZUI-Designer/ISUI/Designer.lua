@@ -1,7 +1,9 @@
 --'PZUI Designer' By The Project Zomboid Modding Community (PZMC) 09132026
 
 --libraries
-require "ISUI/ISPanel"
+require ('ISUI/ISPanel')
+require('Vehicles/ISUI/ISUI3DScene')
+
 
 ---@class PZUI : ISPanel
 local PZUI = ISPanel:derive("PZUI-Designer/PZUI")

@@ -1,6 +1,6 @@
 --'PZUI Handler' By The Project Zomboid Modding Community (PZMC) 09152026
 
-local PZUI = require 'PZUI-Designer/Designer'
+local PZUI = require 'PZUI-Designer/ISUI/Designer'
 local Options = PZAPI.ModOptions:create("PZUIOptions", "PZUI Designer Options")
 
 local _KEY_TOGGLE_HA = Options:addKeyBind(
