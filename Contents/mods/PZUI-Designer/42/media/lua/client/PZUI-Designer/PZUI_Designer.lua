@@ -30,6 +30,8 @@ Events.OnKeyPressed.Add(function(key)
     else
         UIManager.getSpeedControls():SetCurrentGameSpeed(0)
         Designer = PZUI:new(0, 0, getCore():getScreenWidth(), getCore():getScreenHeight())
+        Designer.backgroundColor = {r=1, g=1, b=1, a=1}
+        Designer.borderColor = {r=0, g=0, b=0, a=1}
         Designer:initialise()
         Designer:addToUIManager()
     end
