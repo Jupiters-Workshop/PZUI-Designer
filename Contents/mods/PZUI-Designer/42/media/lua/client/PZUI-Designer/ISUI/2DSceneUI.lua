@@ -1,8 +1,9 @@
 require "Vehicles/ISUI/ISUI3DScene"
 
-EditVehicleUI = ISPanel:derive("EditVehicleUI")
+EditUI = ISPanel:derive("EditUI")
 
-EditVehicleUI_Scene = ISUI3DScene:derive("EditVehicleUI_Scene")
-EditVehicleUI_SwitchView = ISUI3DScene:derive("EditVehicleUI_SwitchView")
-local Scene = EditVehicleUI_Scene
-local SwitchView = EditVehicleUI_SwitchView
+EditUI_Scene = ISUI3DScene:derive("EditUI_Scene")
+EditUI_SwitchView = ISUI3DScene:derive("EditUI_SwitchView")
+local Scene = EditUI_Scene
+local SwitchView = EditUI_SwitchView
+

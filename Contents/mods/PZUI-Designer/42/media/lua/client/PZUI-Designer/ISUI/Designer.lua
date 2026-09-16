@@ -26,11 +26,20 @@ end
 
 function PZUI:create() --our Custom create function that sets the Designer Tools look correctly
     --Our Designer Interface
-    local ci_h = self.height - Margin * 2
-    local ci_w = ci_h * 0.5
-    local cInterface = ISPanel:new(Margin,Margin,ci_w,ci_h)
-    cInterface.backgroundColor = {r=0, g=0, b=0, a=1}
-    self:addChild(cInterface)
+    -- local ci_h = self.height - Margin * 2
+    -- local ci_w = ci_h * 0.5
+    -- local cInterface = ISPanel:new(Margin,Margin,ci_w,ci_h)
+    -- cInterface.backgroundColor = {r=0, g=0, b=0, a=1}
+    -- self:addChild(cInterface)
+
+    local bottomPanel = ISPanel:new(0, self.height - 100 - 9, self.width, 100)
+	bottomPanel:setAnchorTop(false)
+	bottomPanel:setAnchorLeft(true)
+	bottomPanel:setAnchorRight(true)
+	bottomPanel:setAnchorBottom(true)
+    bottomPanel.backgroundColor = {r=1, g=1, b=1, a=1}
+    self:addChild(bottomPanel)
+
 
 end
 
